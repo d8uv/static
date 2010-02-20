@@ -9,14 +9,14 @@ onload = function () {
     out = [];
 
     function scrollHex() {
-	var hex = '0,1,2,3,4,5,6,7,8,9,0,a,b,c,d,e,f'.split(',');
+        var hex = '0,1,2,3,4,5,6,7,8,9,0,a,b,c,d,e,f'.split(',');
 
-	out.unshift(hex[Math.floor(Math.random() * hex.length)]);
-	document.getElementsByTagName('p')[0].innerText = out.join(' ');
+        out.unshift(hex[Math.floor(Math.random() * hex.length)]);
+        document.getElementsByTagName('p')[0].innerHTML = out.join(' ');
 
 	if (out.length > max) {
-	    out.pop();
-	}
+            out.pop();
+        }
     }
 
     setInterval(scrollHex, 100);
