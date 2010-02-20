@@ -3,19 +3,24 @@ eqeq: true, plusplus: true, bitwise: true, regexp: true, strict: true,
 newcap: true, immed: true */
 "use strict";
 onload = function () {
-    var hex, out;
+    var i, out, max;
 
-    hex = '0,1,2,3,4,5,6,7,8,9,0,a,b,c,d,e,f'.split(',');
+    max = 5000;
     out = [];
 
-    setInterval(
-	function () {
-	    out.unshift(hex[Math.floor(Math.random() * hex.length)]);
-	    document.getElementsByTagName('p')[0].innerText = out.join(' ');
+    function scrollHex() {
+	var hex = '0,1,2,3,4,5,6,7,8,9,0,a,b,c,d,e,f'.split(',');
 
-	    if (out.length > 5000) {
-		out.pop();
-	    }
-	}, 100
-    );
+	out.unshift(hex[Math.floor(Math.random() * hex.length)]);
+	document.getElementsByTagName('p')[0].innerText = out.join(' ');
+
+	if (out.length > max) {
+	    out.pop();
+	}
+    }
+
+    setInterval(scrollHex, 100);
+    for (i = 0; i < max; i = i + 1) {
+        scrollHex();
+    }
 };
