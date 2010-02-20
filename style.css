@@ -1,0 +1,10 @@
+body {
+background:#000;
+color:#0f0;
+font-family:'Consolas',monospace;
+letter-spacing:-.25em;
+}
+
+body, p {
+margin:0;
+}
