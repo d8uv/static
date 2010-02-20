@@ -3,8 +3,21 @@ background:#000;
 color:#0f0;
 font-family:'Consolas',monospace;
 letter-spacing:-.25em;
+overflow:hidden;
 }
 
-body, p {
+body, p, h1 {
 margin:0;
 }
+
+div{
+border:#0f0 thin solid;
+background:#020;
+padding:2em;
+opacity:0.9;
+position:absolute;
+top:20%;
+left:25%;
+width:40%;
+letter-spacing:0;
+} 

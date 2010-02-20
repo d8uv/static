@@ -5,7 +5,7 @@ newcap: true, immed: true */
 onload = function () {
     var i, out, max;
 
-    max = 5000;
+    max = 7500;
     out = [];
 
     function scrollHex() {
