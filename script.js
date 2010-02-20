@@ -15,4 +15,5 @@ $(document).ready(function () {
 
     setInterval(scrollHex, 100);
     for (var i = 0; i < max; i = i + 1) scrollHex();
+    $("div").show().delay(5000).fadeOut(1500);
 });
