@@ -9,8 +9,8 @@ $(document).ready(function () {
     function scrollHex() {
         out.unshift(hex[Math.floor(Math.random() * hex.length)]);
         if (out.length > max) {
-	    out.pop();
-	}
+            out.pop();
+        }
     }
 
     while (out.length < max) {
@@ -20,9 +20,9 @@ $(document).ready(function () {
     setInterval(
         function () {
             scrollHex();
-            $('p').text(out.join(' '));
+            $('.matrix').text(out.join(' '));
         }, 100
     );
 
-    $("div").show().delay(5000).fadeOut(1500);
+    $('.preamble').show().delay(5000).fadeOut(1500);
 });
