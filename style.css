@@ -2,8 +2,11 @@ body {
 background:#000;
 color:#0f0;
 font-family:'Consolas',monospace;
-letter-spacing:-.25em;
 overflow:hidden;
+}
+
+p {
+letter-spacing:-.25em;
 }
 
 body, p, h1, h2 {
@@ -16,7 +19,6 @@ background:#020;
 padding:2em;
 opacity:0.9;
 position:absolute;
-letter-spacing:0;
 display:none;
 }
 
@@ -29,4 +31,5 @@ width:40%;
 .error {
 color:#f00;
 padding:1em;
+width:25em;
 }
