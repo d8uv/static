@@ -35,8 +35,8 @@ $(document).ready(function () {
         .fadeIn(250).delay(5000).fadeOut(250);
 
         $('.error p').text(out.slice(0, 80).join(' '));
-        setTimeout(showError, rand() * 20000 + 5500);
+        setTimeout(showError, rand() * 14500 + 5500);
     }
 
-    setTimeout(showError, rand() * 20000 + 5500);
+    setTimeout(showError, rand() * 10000);
 });
